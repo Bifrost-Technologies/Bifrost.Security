@@ -1,0 +1,40 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <PackageIcon>bifrost-icon.png</PackageIcon>
+    <RepositoryUrl>https://github.com/Bifrost-Technologies/Bifrost.Security</RepositoryUrl>
+    <RepositoryType>git</RepositoryType>
+    <PackageTags>bifrost;security;solana;solnet;blockchain;cryptography;</PackageTags>
+    <Copyright>Copyright 2025 Bifrost Inc</Copyright>
+    <PackageProjectUrl>https://github.com/Bifrost-Technologies/Bifrost.Security</PackageProjectUrl>
+    <Description>Cryptography Security library maintained by Bifrost for blockchain &amp; telecommunication technology</Description>
+    <Title>BifrostSecurity</Title>
+    <PackageId>BifrostSecurity</PackageId>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageRequireLicenseAcceptance>False</PackageRequireLicenseAcceptance>
+    <PackageReadmeFile>readme.md</PackageReadmeFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="resources\bifrost-icon.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="..\readme.md">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="resources\bifrost-icon.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </Resource>
+  </ItemGroup>
+
+</Project>
